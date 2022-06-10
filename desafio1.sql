@@ -51,7 +51,7 @@ CREATE TABLE SpotifyClone.seguindo(
   	seguindo_id int NOT NULL auto_increment,
   	usuario_id int NOT NULL,
   	artista_id int NOT NULL,
-  	PRIMARY KEY (seguindo_id),
+  	PRIMARY KEY (seguindo_id, usuario_id),
   	FOREIGN KEY (usuario_id) REFERENCES usuarios(id),
   	FOREIGN KEY (artista_id) REFERENCES artistas(id)
 );
