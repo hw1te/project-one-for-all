@@ -8,4 +8,4 @@ SELECT
     JOIN SpotifyClone.seguindo
     ON artistas.id = seguindo.artista_id
     GROUP BY albuns.album_nome, artistas.nome
-    ORDER BY seguidores DESC, album ASC;
+    ORDER BY seguidores DESC, artista ASC, album ASC;
